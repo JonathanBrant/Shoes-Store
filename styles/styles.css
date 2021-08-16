@@ -12,8 +12,10 @@ html {
 }
 
 .container {
-    width: 130rem;
-    margin: auto;
+    width: 1500px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* HEADER */
@@ -33,13 +35,18 @@ header img {
     padding-left: 2rem;
 }
 
-header nav a {
+header nav.menu a {
     text-decoration: none;
-    color: #777;
+    color: rgb(95, 93, 93);
     font-size: 2.4rem;
     font-weight: 600;
     padding-right: 3.9rem;
 }
+
+header nav.sidemenu {
+    display: none;
+}
+
 
 section.banner img {
     width: 100%;
@@ -66,7 +73,6 @@ section.highlights .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 section.highlights img:first-child {
@@ -158,6 +164,7 @@ section.see-details .container .details {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    max-width: 100%;
 }
 
 section.see-details .container .details .text {
@@ -166,7 +173,6 @@ section.see-details .container .details .text {
 
 section.see-details .container .details .text h3 {
     margin-top: 0;
-    ;
     font-size: 2.2rem;
     font-weight: 600;
     color: #000000;
@@ -359,4 +365,80 @@ section.box .main .text {
 section.box .main .text p {
     margin: 0;
     margin-bottom: 15px;
+}
+
+@media (max-width: 808px) {
+    header nav.menu {
+        display: none;
+    }
+    
+    header nav.sidemenu {
+        display: block;
+        margin-right: 2rem;
+        font-size: 2.5rem;
+        color: #777;
+    }
+    
+}
+
+@media (max-width: 590px) {        
+    section.title h1 {
+        font-size: 5rem;
+    }
+
+    section.highlights .container {
+        flex-direction: column;
+    }
+
+    section.highlights img:last-child {
+        width: 70%;
+    }
+    section.highlights img:first-child {
+        width: 70%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 505px) {
+    section.see-details .container .details .text h3 {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    
+    section.see-details .container .details .text button {
+        padding: 2rem 6rem;
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 492px) {        
+    section.title h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 412px) {
+    section.see-details .container .details .text h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    
+    section.see-details .container .details .text button {
+        padding: 2rem 6rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 392px) {        
+    section.title h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 320px) {        
+    section.title h1 {
+        font-size: 3rem;
+    }
 }
