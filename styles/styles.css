@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+.container {
+    width: 130rem;
+    margin: auto;
+}
+
+/* HEADER */
+
+header {
+    height: 12rem;
+    background: #FFF;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 20rem;
+    padding-left: 2rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #777;
+    font-size: 2.4rem;
+    font-weight: 600;
+    padding-right: 3.9rem;
+}
+
+section.banner img {
+    width: 100%;
+}
+
+section.title h1{
+    font-size: 6rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 8rem auto;
+    color: #000;
+}
+
+/* Highlights */
+
+section.highlights  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section.highlights .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section.highlights img:first-child {
+    width: 40%;
+}
+
+section.highlights img:last-child {
+    width: 56%;
+}
+
+/* Offers */
+
+section.offers {
+    margin-top: 20rem;
+    background: #C2185B;
+}
+
+section.offers h2 {
+    color: white;
+    font-size: 4.4rem;
+    line-height: 6rem;
+    font-weight: 800;
+    padding: 6rem;
+    text-align: center;
+}
+
+section.offers article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    padding-bottom: 10rem;
+
+}
+
+section.offers div.each {
+    width: 32rem;
+    height: 45rem;
+    background: white;
+
+
+}
+
+section.offers div.each div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+
+    width: 100%;
+    height: 78%;
+}
+
+section.offers div.each div.price {
+    width: 100%;
+    height: 22%;    
+    padding: 1rem;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+section.offers div.each div.price h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+section.offers div.each div.price p {
+    font-size: 1.6rem;
+    font-weight: 400;
+}   
+
+/*See-details*/
+
+section.see-details .box {
+    margin: 8rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+section.see-details .container .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+section.see-details .container .details .text {
+    margin-bottom: 1rem;
+}
+
+section.see-details .container .details .text h3 {
+    margin-top: 0;
+    ;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #000000;
+}
+
+section.see-details .container .details .text button {
+    border: 0;
+    text-align: center;
+    padding: 2.5rem 9.5rem;
+    font-size: 2.2rem;
+    font-weight: 400;
+    background-color: #C2185B;
+    color: #fff;
+}
+
+section.see-details .container .details .small img {
+    max-width: 100%;
+}
+
+section.see-details .container .box .big img {
+    max-width: 100%;
+}
+
+/* footer */
+
+footer {
+    background-color: #C2185B;
+    margin-top: 2rem;
+
+}
+
+footer .container {
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+footer .container .info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer .container .info .description {
+    margin-top: 1rem;
+}
+
+
+footer .container .info p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+footer .container .info .category,
+footer .container .info .institutional {
+    font-size: 1.5rem;
+}
+
+footer .container .info .institutional a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .container .info .category h2,
+footer .container .info .institutional h2 {
+
+    font-weight: 700;
+    margin: 3.5rem 0 1.5rem 0;
+}
+
+/* Trabalhe conosco */
+
+/*form*/
+section.box .title h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 0rem 0 3.6rem 7rem;
+    text-align: start;
+
+}
+
+section.box .main {
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+section.box .main .form {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+section.box .main .form .data {
+    line-height: 1.8;
+    color: #777777;
+}
+
+section.box .main .form .data input {
+    color: #777777;
+    border: 1px solid #9B9B9B;
+    height: 26px;
+    width: 50rem;
+    max-width: 100%;
+}
+
+section.box .main .form .available {
+    margin: 15px 0;
+    color: #777777;
+}
+
+section.box .main .form .available label,
+section.box .main .form .contacts label {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #777777;
+    font-weight: normal;
+}
+
+section.box .main .form .available input {
+    color: #777777;
+}
+
+section.box .main .form .available h4,
+section.box .main .form .contacts h4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 15px;
+    margin: 0;
+}
+
+section.box .main .form .contacts {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 15px;
+    color: #777777;
+}
+
+section.box .main .form h4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 10px;
+    margin: 0;
+    margin-top: 20px;
+}
+
+section.box .main .form textarea {
+    width: 100%;
+    color: #777777;
+    margin: 0;
+    border: 1px solid #777777;
+}
+
+section.box .main .form .attach {
+    margin: 15px 0;
+}
+
+section.box .main .form .attach button {
+    margin-left: 10px;
+    background-color: #C4C4C4;
+    padding: 3px 25px;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+section.box .main .form .btn-submit button {
+    background-color: #C2185B;
+    margin-top: 10px;
+    font-weight: 700;
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    border: 0;
+    cursor: pointer;
+}
+
+
+section.box .main .text {
+    width: 60rem;
+    max-width: 100%;
+    max-width: 100%;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+}
+
+section.box .main .text p {
+    margin: 0;
+    margin-bottom: 15px;
+}
